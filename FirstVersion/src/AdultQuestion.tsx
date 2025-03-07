@@ -1,4 +1,10 @@
-function AdultOrNot({ setIsAdult }) {
+import {FC} from 'react';
+
+type AdultOrNotProps = {
+  setIsAdult: (value: boolean) => void;
+}
+
+const AdultOrNot: FC<AdultOrNotProps> = ({ setIsAdult }) => {
     const yesHandler = () => {
         setIsAdult(true);
     };
