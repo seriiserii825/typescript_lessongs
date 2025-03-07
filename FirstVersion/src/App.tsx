@@ -4,7 +4,7 @@ import AdultOrNot from './AdultQuestion';
 import { getGamesFromServer, priceWithCurrency } from './utils';
 
 function App() {
-  const [isAdult, setIsAdult] = useState(null);
+  const [isAdult, setIsAdult] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(true);
   const [games, setGames] = useState([]);
 
