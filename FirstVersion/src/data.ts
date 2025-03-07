@@ -1,4 +1,14 @@
-export const GAMES = [
+export type TGame = {
+  id: number;
+  name: string;
+  description?: string;
+  version?: string;
+  price?: number;
+  tags?: string[];
+  forKids: boolean;
+}
+
+export const GAMES: TGame[] = [
     {
         id: 1,
         name: 'Мортал Комбат',

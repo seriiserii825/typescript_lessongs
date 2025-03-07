@@ -1,6 +1,6 @@
-import { GAMES } from './data';
+import { GAMES, TGame } from './data';
 
-export function getGamesFromServer() {
+export function getGamesFromServer(): Promise<TGame[]> {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(GAMES);
